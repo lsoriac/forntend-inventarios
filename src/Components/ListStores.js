@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default class ListStores extends Component {
     state = {
         stores: [],
-        URLBACK: "https://restinventarios.herokuapp.com/"
+        URLBACK: "https://backend-inventarios.herokuapp.com/"
     }
 
     getStores = async () => {

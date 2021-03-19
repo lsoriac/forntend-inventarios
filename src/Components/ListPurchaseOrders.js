@@ -10,7 +10,7 @@ registerLocale('es', es)
 export default class ListPurchaseOrders extends Component {
     state = {
         purchase_orders: [],
-        URLBACK: "https://restinventarios.herokuapp.com/",
+        URLBACK: "https://backend-inventarios.herokuapp.com/",
         date: new Date()///actual date
     }
 

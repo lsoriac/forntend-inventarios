@@ -10,7 +10,7 @@ export default class ListFacturas extends Component {
     state = {
         facturas: [],
         date: new Date(),///actual date
-        URLBACK: "https://restinventarios.herokuapp.com/"
+        URLBACK: "https://backend-inventarios.herokuapp.com/"
     }
 
     async componentDidMount() {

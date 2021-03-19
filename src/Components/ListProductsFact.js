@@ -7,7 +7,7 @@ export default class ListProductsFact extends Component {
         factura: {},
         ides:[],
         places:[],
-        URLBACK: "https://restinventarios.herokuapp.com/"
+        URLBACK: "https://backend-inventarios.herokuapp.com/"
     }
     async componentDidMount() {
         document.getElementById('send').style.display = 'None'

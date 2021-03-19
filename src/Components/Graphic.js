@@ -16,7 +16,7 @@ export default class Graphic extends Component {
         outputs: [],
         i_p:[],
         o_p:[],
-        URLBACK: "https://restinventarios.herokuapp.com/"
+        URLBACK: "https://backend-inventarios.herokuapp.com/"
     }
     async componentDidMount() {
         const res3 = await axios.get(this.state.URLBACK+'store')

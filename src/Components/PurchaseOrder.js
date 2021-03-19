@@ -31,7 +31,7 @@ export default class FormPurchaseOrder extends Component {
         providers: [],
         productsByCategory: [],
         products: [],
-        URLBACK: "https://restinventarios.herokuapp.com/"
+        URLBACK: "https://backend-inventarios.herokuapp.com/"
     }
 
     async componentDidMount() {

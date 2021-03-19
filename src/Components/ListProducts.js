@@ -8,7 +8,7 @@ export default class FormProducts extends Component {
     }
 
     getProducts = async () => {
-        const res = await axios.get('https://restinventarios.herokuapp.com/products')
+        const res = await axios.get('https://backend-inventarios.herokuapp.com/products')
         this.setState({ products: res.data.products })
     }
 
@@ -21,7 +21,7 @@ export default class FormProducts extends Component {
         //var mensaje = '';
         var opcion = window.confirm("Está seguro que desea eliminar este producto ?");
         if (opcion === true) {
-            const res = await axios.delete('https://restinventarios.herokuapp.com/products/' + id)
+            const res = await axios.delete('https://backend-inventarios.herokuapp.com/products/' + id)
             //console.log(res);
             this.getProducts();
             //mensaje = "Se ha borrado exitosamente"

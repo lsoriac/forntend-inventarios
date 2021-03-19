@@ -39,7 +39,7 @@ export default class FormStore extends Component {
         "Tungurahua",
         "Zamora Chinchipe",
         ],
-        URLBACK: "https://restinventarios.herokuapp.com/"
+        URLBACK: "https://backend-inventarios.herokuapp.com/"
 
     }
 

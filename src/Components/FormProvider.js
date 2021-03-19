@@ -11,7 +11,7 @@ export default class FormProvider extends Component {
 
         edit: false,
         _id: '',
-        URLBACK: "https://restinventarios.herokuapp.com/"
+        URLBACK: "https://backend-inventarios.herokuapp.com/"
     }
 
     //Allow show function, pedir datos

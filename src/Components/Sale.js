@@ -26,7 +26,7 @@ export default class Sale extends Component {
         products_category: [],
         productsByCategory: [],
         categories: ["HOMBRE", "MUJER"],
-        URLBACK: "https://restinventarios.herokuapp.com/"
+        URLBACK: "https://backend-inventarios.herokuapp.com/"
 
     }
 

@@ -6,7 +6,7 @@ export default class ListUsers extends Component {
     state = {
         users: [],
         cont: 1,
-        URLBACK: "https://restinventarios.herokuapp.com/"
+        URLBACK: "https://backend-inventarios.herokuapp.com/"
     }
 
     getUsers = async () => {

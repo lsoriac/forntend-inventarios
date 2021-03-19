@@ -7,7 +7,7 @@ export default class ListProductsPO extends Component {
         purchase_order: {},
         places: [],
         ides:[],
-        URLBACK: "https://restinventarios.herokuapp.com/"
+        URLBACK: "https://backend-inventarios.herokuapp.com/"
     }
     async componentDidMount() {
         document.getElementById('send').style.display = 'None'

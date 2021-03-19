@@ -27,8 +27,8 @@ export default class FormProduct extends Component {
         //STORE places
         document.getElementById('all').style.display = 'none'
         let headers = this.verifyAccessToken()
-        const res = await axios.get('https://restinventarios.herokuapp.com/store', {headers})
-        const res2 = await axios.get('https://restinventarios.herokuapp.com/provider')
+        const res = await axios.get('https://backend-inventarios.herokuapp.com/store', {headers})
+        const res2 = await axios.get('https://backend-inventarios.herokuapp.com/provider')
         //console.log(res2.data.providerslength);
         if (res.data.stores.length !== 0 & res2.data.providers.length !== 0) {
             document.getElementById('all').style.display = 'block'
@@ -43,7 +43,7 @@ export default class FormProduct extends Component {
             let unicos2 = Array.from(new Set(plac2))
 
             if (this.props.match.params.id) {
-                const res1 = await axios.get('https://restinventarios.herokuapp.com/products/' + this.props.match.params.id)
+                const res1 = await axios.get('https://backend-inventarios.herokuapp.com/products/' + this.props.match.params.id)
                 this.setState({
                     edit: true,
                     _id: this.props.match.params.id,
@@ -114,14 +114,14 @@ export default class FormProduct extends Component {
             for (let name in this.state) {
                 newProduct.append(name, this.state[name]);
             }
-            const res = await axios.put('https://restinventarios.herokuapp.com/products/' + this.state._id, newProduct)
+            const res = await axios.put('https://backend-inventarios.herokuapp.com/products/' + this.state._id, newProduct)
            // console.log(res);
         } else {//CREATE
             const newProduct = new FormData();
             for (let name in this.state) {
                 newProduct.append(name, this.state[name]);
             }
-            await axios.post('https://restinventarios.herokuapp.com/products', newProduct)
+            await axios.post('https://backend-inventarios.herokuapp.com/products', newProduct)
         }
         window.location.href = '/product'
     }

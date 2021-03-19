@@ -58,7 +58,7 @@ export default class Carrito extends Component {
             email_client: this.state.email_client}
            //FACTURACIÓN
             //Calculated on Backend (total)
-            const res = await axios.post('https://restinventarios.herokuapp.com/facturas', { sale_product: aux, client })
+            const res = await axios.post('https://backend-inventarios.herokuapp.com/facturas', { sale_product: aux, client })
             console.log(res);
             //this.getProducts();
             /////////////////////aqui puedo añadir datos del cliente :

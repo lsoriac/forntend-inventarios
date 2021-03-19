@@ -7,7 +7,7 @@ export default class FormLogin extends Component {
         pass_user: '',
         users: [],
         store_user: "",
-        URLBACK: "https://restinventarios.herokuapp.com/"
+        URLBACK: "https://backend-inventarios.herokuapp.com/"
 
     }
 

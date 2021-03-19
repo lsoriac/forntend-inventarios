@@ -19,7 +19,7 @@ export default class FormUser extends Component {
         _id: '' ,  
 
         client: false,
-        URLBACK: "https://restinventarios.herokuapp.com/"
+        URLBACK: "https://backend-inventarios.herokuapp.com/"
     }
 
     //Allow show function, pedir datos

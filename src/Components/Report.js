@@ -11,7 +11,7 @@ export default class Report extends Component {
         clients: [],
 
         inputs_outputs:[],
-        URLBACK: "https://restinventarios.herokuapp.com/"
+        URLBACK: "https://backend-inventarios.herokuapp.com/"
     }
     async componentDidMount() {
         const res = await axios.get(this.state.URLBACK+'output')
